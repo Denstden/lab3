@@ -1,0 +1,65 @@
+"asdga123e34da \"\"\\"
+12e55 1E-123 -12.4E2 2.55e+3
+
+#asdads asdfasa adfasdf
+SASDFASDF    AAX11 asdfasdfa
+aaa
+aaaaaaaa "faaa\"\"\\" 1223 '\n' 'n' class;
++=+= 11 >>= + = ,[] {} "ada/" '/'
+//asdf 00112 0xAAF12
+/= *=
+0x11AffABB 00000011112
+111.100
+0.11e+55 -1222.42E-012
+*
+- -> ->*
+/*asdfasdfasdfafsdsd
+asdfa
+adaaaffsdss1312/////////////\\\\\\\\\\a\\\\a///xv/*/
+
+#include <iostream.h>
+#include <соnio.h>
+const int n=20;
+public static void main()
+{
+float mas[n];
+for (int i=0; i < n; i++)
+cin >> mas[i];
+/*comment asdfasjnfanj111111121312//////
+
+a*999000x991\\/*/
+for(int i=0; i < n; i++)
+cout << " " << mas[i] << ""; //this is comment
+getch ();
+}
+
+#pragma once
+#include <istream>
+#include <string>
+//for text in format <surname>:<year><EOLN>
+class StuLexAn{
+private:
+	enum CT {ctWhite, ctLatin, ctColon, ctDigit, ctOther, ctEoln, ctEof=254,
+ctFail=255,ctNone=-1};
+	char c;     //last read char, if exists
+	CT ct;   //last char type
+	CT readChar(); //pre: stream is OK; read char into c and set it's type
+
+	std::istream *f; //input stream
+	bool isNew; // true iff f was created by new operation
+
+	//int maxLexLength; //lexem size limit; needed for more than 1 symbol lookahead
+mode
+public:	enum lexType {Error=0, Eof=1, Name, Integer, Colon, Whites, Eoln, None}; // Error
+means input or lex error
+private:    lexType state2lexeme(int state) const; //
+			int step(int state) const;//one step from state
+			StuLexAn(const StuLexAn &);
+			StuLexAn& operator =(const StuLexAn &);
+
+public:		StuLexAn(std::string fname);
+			~StuLexAn();
+			lexType getLex(std::string &sLexem); //get next lexem, if exist;
+	        bool fail() const;
+	        bool eof() const;
+};
